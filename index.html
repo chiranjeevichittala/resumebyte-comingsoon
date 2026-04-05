@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ResumeByte.in — AI Resume Builder & ATS Optimization Platform (Coming Soon)</title>
+  <meta name="description" content="ResumeByte.in is a coming-soon AI-powered resume builder for candidates and employers. Build ATS-ready resumes, discover candidates by skills, and connect through secure messaging." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="ResumeByte" />
+  <link rel="canonical" href="https://resumebyte.in/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ResumeByte.in — AI Resume Builder & ATS Optimization (Coming Soon)" />
+  <meta property="og:description" content="Create ATS-ready resumes, improve keyword match, and connect candidates with employers. Join the launch waitlist." />
+  <meta property="og:url" content="https://resumebyte.in/" />
+  <meta property="og:site_name" content="ResumeByte" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ResumeByte.in — Coming Soon" />
+  <meta name="twitter:description" content="AI resume builder + employer candidate search + secure messaging." />
+
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Google Analytics (replace G-XXXXXXXXXX with your Measurement ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} // eslint-disable-line no-unused-vars
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Google AdSense (replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID after approval) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+  <!-- JSON-LD: Organization + WebSite + SoftwareApplication + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://resumebyte.in/#organization",
+        "name": "ResumeByte",
+        "url": "https://resumebyte.in/",
+        "logo": "https://resumebyte.in/assets/logo.png",
+        "email": "support@resumebyte.in",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://resumebyte.in/#website",
+        "url": "https://resumebyte.in/",
+        "name": "ResumeByte",
+        "publisher": { "@id": "https://resumebyte.in/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://resumebyte.in/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "ResumeByte Resume Builder",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+        "description": "Build ATS-friendly resumes, optimize keywords, and connect with recruiters."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is ResumeByte?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ResumeByte is a platform for creating ATS-ready resumes with professional templates, scoring, and smart keyword suggestions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can employers use ResumeByte?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Employers can filter candidates by skills, experience, and role relevance, and message them directly through the platform."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #0f172a;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --primary: #38bdf8;
+      --secondary: #22c55e;
+      --border: #1e293b;
+      --maxw: 1120px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: radial-gradient(1200px 500px at 20% -20%, #1e3a8a33, transparent), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 1rem; }
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(6px);
+      background: #020617cc;
+      border-bottom: 1px solid var(--border);
+      z-index: 5;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .brand { font-weight: 700; font-size: 1.1rem; }
+    .pill {
+      display: inline-block;
+      background: #0c4a6e;
+      color: #bae6fd;
+      border: 1px solid #075985;
+      border-radius: 999px;
+      padding: 0.2rem 0.65rem;
+      font-size: 0.8rem;
+      margin-left: 0.6rem;
+      vertical-align: middle;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1rem;
+      padding: 3rem 1rem 2rem;
+      align-items: center;
+    }
+    .card {
+      background: linear-gradient(180deg, #0b1227, var(--card));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.2rem;
+      box-shadow: 0 8px 24px #0000004d;
+    }
+    h1, h2 { line-height: 1.2; }
+    h1 { font-size: clamp(1.8rem, 3vw, 3rem); margin: 0 0 0.8rem; }
+    .sub { color: var(--muted); margin-top: 0; }
+    .cta-group {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
+    }
+    .btn {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.7rem 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #0ea5e9, #2563eb);
+      color: white;
+      border-color: #0ea5e9;
+    }
+    .btn-secondary {
+      background: #0b1227;
+      color: var(--text);
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .list-clean {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .list-clean li {
+      margin: 0.5rem 0;
+      padding-left: 1.4rem;
+      position: relative;
+    }
+    .list-clean li::before {
+      content: "✔";
+      color: var(--secondary);
+      position: absolute;
+      left: 0;
+    }
+    .waitlist form {
+      display: grid;
+      gap: 0.65rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.65rem 0.7rem;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      background: #020617;
+      color: var(--text);
+    }
+    footer {
+      margin-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .small { font-size: 0.92rem; color: var(--muted); }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">ResumeByte.in <span class="pill">Coming Soon</span></div>
+      <nav aria-label="Primary">
+        <a href="#features">Features</a> ·
+        <a href="#employers">Employers</a> ·
+        <a href="#waitlist">Join Waitlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">Build ATS-Ready Resumes.<br />Hire Smarter Talent.</h1>
+        <p class="sub">ResumeByte helps candidates create highly optimized resumes and helps employers discover quality candidates by skills, experience, and relevance filters.</p>
+        <ul class="list-clean">
+          <li>Modern resume templates built for recruiters and ATS systems.</li>
+          <li>ATS score insights with smart keyword recommendations.</li>
+          <li>Candidate-employer messaging for faster hiring workflows.</li>
+        </ul>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#waitlist">Get Early Access</a>
+          <a class="btn btn-secondary" href="contact.html">Contact Team</a>
+        </div>
+      </div>
+
+      <aside class="card waitlist" id="waitlist" aria-label="Waitlist form">
+        <h2>Join the Launch Waitlist</h2>
+        <p class="small">Be among the first to try ResumeByte for candidates and employers.</p>
+        <form action="#" method="post">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+
+          <label for="role">I am a</label>
+          <select id="role" name="role" required>
+            <option value="">Select role</option>
+            <option>Candidate</option>
+            <option>Employer / Recruiter</option>
+            <option>HR Professional</option>
+          </select>
+
+          <button class="btn btn-primary" type="submit">Register Interest</button>
+          <p class="small">By registering, you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+        </form>
+      </aside>
+    </section>
+
+    <section id="features" class="grid-3" aria-label="Key features">
+      <article class="card">
+        <h2>For Candidates</h2>
+        <p>Create resumes from recruiter-approved templates, improve ATS score, and get role-based keyword guidance.</p>
+      </article>
+      <article class="card" id="employers">
+        <h2>For Employers</h2>
+        <p>Search candidate profiles using filters like skills, experience, role, location, and availability.</p>
+      </article>
+      <article class="card">
+        <h2>Messaging System</h2>
+        <p>Secure in-platform communication between candidates and hiring teams to streamline interviews and hiring.</p>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:1rem;">
+      <h2>Pages Included for Professional Launch & Compliance</h2>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <p class="small">For analytics/ad approvals, replace placeholder IDs, add real business contact details, and publish with original production content and imagery.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-links">
+      <p>© <span id="year"></span> ResumeByte.in. All rights reserved.</p>
+      <p>
+        <a href="about.html">About</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a> ·
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
